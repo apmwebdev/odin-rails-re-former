@@ -11,11 +11,11 @@
 <!--</form>-->
 
 <%= form_with model: @user do |form| %>
-  <label for="username">Username:</label>
+  <%= form.label :username %>
   <%= form.text_field :username %>
-  <label for="email">Email:</label>
+  <%= form.label :email %>
   <%= form.email_field :email %>
-  <label for="password">Password:</label>
+  <%= form.label :password %>
   <%= form.password_field :password %>
   <%= form.submit "Submit" %>
 <% end %>
